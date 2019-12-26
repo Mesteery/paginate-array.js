@@ -1,5 +1,5 @@
 {
-  "name": "paginate.js",
+  "name": "pagination.js",
   "version": "0.5.0",
   "description": "A simple JavaScript utility to paginate arrays.",
   "repository": "mestery69/paginate.js",
