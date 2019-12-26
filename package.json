@@ -1,0 +1,30 @@
+{
+  "name": "paginate.js",
+  "version": "0.5.0",
+  "description": "A simple JavaScript utility to paginate arrays.",
+  "main": "paginate.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -R 'spec'"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "repository": "",
+  "author": "Mestery",
+  "license": "MIT",
+  "keywords": [
+    "array",
+    "arrays",
+    "pager",
+    "paginate",
+    "pagination",
+    "javascript",
+    "simple",
+    "array-pagination",
+    "paginate-array",
+    "paginate.js"
+  ]
+}
