@@ -1,4 +1,4 @@
-# paginate.js
+# pagination.js
 
 ##### A simple JavaScript utility to paginate arrays.  
   
