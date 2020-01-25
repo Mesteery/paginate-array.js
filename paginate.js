@@ -7,97 +7,97 @@
  * @constructor
  * @api public
  */
- 
+
 class Paginate {
-  constructor (data, perPage) {
-	if (!data) throw new Error('Required Argument Missing')
-	if (!(data instanceof Array)) throw new Error('Invalid Argument Type')
+  constructor(data, perPage) {
+    if (!data) throw new Error('Required Argument Missing')
+    if (!(data instanceof Array)) throw new Error('Invalid Argument Type')
 
-	this.data = data
-	this.perPage = perPage || 10
-	this.currentPage = 0
-	this.totalPages = Math.ceil(this.data.length / this.perPage)
+    this.data = data
+    this.perPage = perPage || 10
+    this.currentPage = 0
+    this.totalPages = Math.ceil(this.data.length / this.perPage)
   }
-}
 
 
-/**
- * Calculates the offset.
- *
- * @return {Number}
- * @api private
- */
- 
-Paginate.prototype.offset = function () {
-	return ((this.currentPage - 1) * this.perPage);
-}
+  /**
+   * Calculates the offset.
+   *
+   * @return {Number}
+   * @api private
+   */
 
-/**
- * Returns the specified `page`.
- *
- * @param {Number} pageNum
- * @return {Array}
- * @api public
- */
- 
-Paginate.prototype.page = function (pageNum) {
-	if (pageNum < 1) pageNum = 1
-	if (pageNum > this.totalPages) pageNum = this.totalPages
-	
-	this.currentPage = pageNum
-	
-	let start = this.offset()
-	let end = start + this.perPage
+  #offset() {
+    return ((this.currentPage - 1) * this.perPage);
+  }
 
-	return this.data.slice(start, end);
-}
+  /**
+   * Returns the specified `page`.
+   *
+   * @param {Number} pageNum
+   * @return {Array}
+   * @api public
+   */
 
-/**
- * Returns the next `page`.
- *
- * @return {Array}
- * @api public
- */
- 
-Paginate.prototype.next = function () {
-	return this.page(this.currentPage < this.totalPages? this.currentPage + 1 : this.totalPages);
-}
+  page(pageNum) {
+    if (pageNum < 1) pageNum = 1
+    if (pageNum > this.totalPages) pageNum = this.totalPages
 
-/**
- * Returns the previous `page`.
- *
- * @return {Array}
- * @api public
- */
- 
-Paginate.prototype.prev = function () {
-	return this.page(this.currentPage > 1? this.currentPage - 1 : 1);
-}
+    this.currentPage = pageNum
 
-/**
- * Checks if there is a next `page`.
- *
- * @return {Boolean}
- * @api public
- */
- 
-Paginate.prototype.hasNext = function () {
-	return (this.currentPage < this.totalPages)
-}
+    let start = this.#offset()
+    let end = start + this.perPage
 
-/**
- * Checks if there is a previous `page`.
- *
- * @return {Boolean}
- * @api public
- */
+    return this.data.slice(start, end);
+  }
 
-Paginate.prototype.hasPrev = function () {
-	return (this.currentPage > 1)
+  /**
+   * Returns the next `page`.
+   *
+   * @return {Array}
+   * @api public
+   */
+
+  next() {
+    return this.page(this.currentPage++)
+  }
+
+  /**
+   * Returns the previous `page`.
+   *
+   * @return {Array}
+   * @api public
+   */
+
+  prev() {
+    return this.page(this.currentPage--)
+  }
+
+  /**
+   * Checks if there is a next `page`.
+   *
+   * @return {Boolean}
+   * @api public
+   */
+
+  hasNext() {
+    return (this.currentPage < this.totalPages)
+  }
+
+  /**
+   * Checks if there is a previous `page`.
+   *
+   * @return {Boolean}
+   * @api public
+   */
+
+  hasPrev() {
+    return (this.currentPage > 1)
+  }
 }
 
 /**
  * Expose `Paginate`
  */
- 
+
 if (typeof module !== 'undefined') module.exports = Paginate
