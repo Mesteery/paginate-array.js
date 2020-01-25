@@ -59,7 +59,7 @@ class Paginate {
    */
 
   next() {
-    return this.page(this.currentPage++)
+    return this.page(this.currentPage + 1)
   }
 
   /**
@@ -70,7 +70,7 @@ class Paginate {
    */
 
   prev() {
-    return this.page(this.currentPage--)
+    return this.page(this.currentPage - 1)
   }
 
   /**
