@@ -4,7 +4,7 @@
   
   
 ## Usage
-* `Paginate` - Creates a new `Paginate` form a givin `Array`,
+* Creates a new `Paginate` form a givin `Array`,
 optionally with a specific `Number` of items per page.
 
     * `page(pageNum)` - Returns the specified page or return the last or the first if the specified page doesn't exists (as Array).
