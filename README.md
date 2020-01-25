@@ -4,8 +4,10 @@
   
   
 ## Usage
+  
 * Creates a new `Paginate` form a givin `Array`,
-optionally with a specific `Number` of items per page.
+optionally with a specific `Number` of items per page : `new Paginate(array, /* optionnaly number */)`
+    
 
     * `page(pageNum)` - Returns the specified page or return the last or the first if the specified page doesn't exists (as Array).
 
@@ -24,37 +26,21 @@ optionally with a specific `Number` of items per page.
 const Paginate = require("paginate-array.js")
 
 // create some fake data
-let fakeData = new Array(32)
-	
-// create a Paginate object
-let pager = new Paginate(fakeData)
-	
-// print all the pages
-while(pager.hasNext()) {
-  console.log(pager.next())
+let fakeData = []
+for (let i = 1; i <= 38; i++) {
+  fakeData.push("Fake Data n° "+i)
 }
-		
-// get page 1 (first page)
-console.log(pager.page(1))
-	
-// then
 
-// this will print page 2
-console.log(pager.next())
-```	
-
-```js
-const Paginate = require("paginate-array.js")
-
-// create some fake data
-let fakeData = new Array(48)
-
-// create a Paginate object
+// create a Paginate object with 10 items per page (it's the default value)
 let pager = new Paginate(fakeData)
 
-// this will print the first page
+// print the tenth page
+console.log(pager.page(10))
+
+// print the next page : eleventh page
 console.log(pager.next())
-// this will print the first page too, because there is no previous pages
+
+// print the previous page : tenth page
 console.log(pager.prev())
 ```
 
@@ -62,36 +48,16 @@ console.log(pager.prev())
 const Paginate = require("paginate-array.js")
 
 // create some fake data
-let fakeData = new Array(28)
+let fakeData = []
+for (let i = 1; i <= 14; i++) {
+  fakeData.push("Fake Data n° "+i)
+}
 
-// create a Paginate object
-let pager = new Paginate(fakeData)
+// create a Paginate object with 5 items per page
+let pager = new Paginate(fakeData, 5)
 
-// get next page (the 1st page)
-console.log(page.next())
-// get previous page (the 2nd page)
-console.log(page.next())
-
-// this will print true
+// print false
 console.log(pager.hasPrev())
-// this will print true
+// print true
 console.log(pager.hasNext())
-```
-
-```js
-const Paginate = require("paginate-array.js")
-
-// create some fake data
-let fakeData = new Array(9)
-
-// create a Paginate object
-let pager = new Paginate(fakeData)
-
-// this will print the 2nd page
-console.log(pager.page(2))
-
-// this will print the last page, because the page 192993 doesn't exist
-console.log(pager.page(192993))
-// this will print the first page, because the page -2 doesn't exist
-console.log(pager.page(-2)) 
 ```
