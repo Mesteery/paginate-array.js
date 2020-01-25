@@ -25,3 +25,9 @@ console.log(pager.prev())
 if (pager.hasPrev()) {
   console.log(pager.prev())
 } else console.log("There are no previous page...")
+
+// print the first page
+console.log(pager.page(1))
+
+// print the last page
+console.log(pager.page(pager.totalPages))
