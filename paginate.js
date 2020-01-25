@@ -27,7 +27,7 @@ class Paginate {
    * @api private
    */
 
-  #offset() {
+  _offset() {
     return ((this.currentPage - 1) * this.perPage);
   }
 
@@ -45,7 +45,7 @@ class Paginate {
 
     this.currentPage = pageNum
 
-    let start = this.#offset()
+    let start = this._offset()
     let end = start + this.perPage
 
     return this.data.slice(start, end);
