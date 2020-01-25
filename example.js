@@ -19,3 +19,9 @@ console.log(pager.next())
 
 // print the previous page : first page
 console.log(pager.prev())
+
+// print the previous page only if there are previous pages
+// (it's the same process for  pager.hasNext()
+if (pager.hasPrev()) {
+  console.log(pager.prev())
+} else console.log("There are no previous page...")
