@@ -11,8 +11,11 @@ while(pager.hasNext()) {
   console.log(pager.next())
 }
 		
-// print first page
-console.log(pager.page(1))
+// print the second page
+console.log(pager.page(2))
 
-// print second page
+// print the next page : third page
 console.log(pager.next())
+
+// print the previous page : first page
+console.log(pager.prev())
