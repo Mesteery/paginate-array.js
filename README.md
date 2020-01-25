@@ -21,7 +21,7 @@ optionally with a specific `Number` of items per page.
 ## Examples :
 
 ```js
-const Paginate = require("paginate.js")
+const Paginate = require("paginate-array.js")
 
 // create some fake data
 let fakeData = new Array(32)
@@ -44,7 +44,7 @@ console.log(pager.next())
 ```	
 
 ```js
-const Paginate = require("paginate.js")
+const Paginate = require("paginate-array.js")
 
 // create some fake data
 let fakeData = new Array(48)
@@ -59,7 +59,7 @@ console.log(pager.prev())
 ```
 
 ```js
-const Paginate = require("paginate.js")
+const Paginate = require("paginate-array.js")
 
 // create some fake data
 let fakeData = new Array(28)
@@ -79,7 +79,7 @@ console.log(pager.hasNext())
 ```
 
 ```js
-const Paginate = require("paginate.js")
+const Paginate = require("paginate-array.js")
 
 // create some fake data
 let fakeData = new Array(9)
