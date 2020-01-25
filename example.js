@@ -1,15 +1,13 @@
 const Paginate = require("paginate-array.js")
 
 // create some fake data
-let fakeData = new Array(42)
-	
+let fakeData = []
+for (let i = 1; i <= 42; i++) {
+  fakeData.push("Fake Data n° "+i)
+}
+
 // create a new Paginate object
 let pager = new Paginate(fakeData)
-	
-// print all the pages
-while(pager.hasNext()) {
-  console.log(pager.next())
-}
 		
 // print the second page
 console.log(pager.page(2))
@@ -21,7 +19,6 @@ console.log(pager.next())
 console.log(pager.prev())
 
 // print the previous page only if there are previous pages
-// (it's the same process for  pager.hasNext()
 if (pager.hasPrev()) {
   console.log(pager.prev())
 } else console.log("There are no previous page...")
