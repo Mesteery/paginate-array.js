@@ -8,7 +8,8 @@
  * @api public
  */
  
-function Paginate (data, perPage) {
+class Paginate {
+  constructor (data, perPage) {
 	if (!data) throw new Error('Required Argument Missing')
 	if (!(data instanceof Array)) throw new Error('Invalid Argument Type')
 
@@ -16,6 +17,7 @@ function Paginate (data, perPage) {
 	this.perPage = perPage || 10
 	this.currentPage = 0
 	this.totalPages = Math.ceil(this.data.length / this.perPage)
+  }
 }
 
 
