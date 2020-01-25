@@ -13,6 +13,7 @@
   "devDependencies": {
     "mocha": "*"
   },
+  "runkitExampleFilename": "./example.js",
   "repository": "",
   "author": "Mestery",
   "license": "MIT",
