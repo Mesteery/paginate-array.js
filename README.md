@@ -6,8 +6,7 @@
 ## Usage
   
 * Creates a new `Paginate` form a givin `Array`,
-optionally with a specific `Number` of items per page : `new Paginate(array, /* optionnaly number */)`
-    
+optionally with a specific `Number` of items per page : `new Paginate(array, /* optionnaly number */)` - return Paginate object
 
     * `page(pageNum)` - Returns the specified page or return the last or the first if the specified page doesn't exists (as Array).
 
