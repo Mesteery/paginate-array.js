@@ -7,7 +7,7 @@ for (let i = 1; i <= 42; i++) {
 }
 
 // create a new Paginate object
-let pager = new Paginate(fakeData)
+let pager = new Paginate(fakeData, 11)
 		
 // print the last page
 console.log(pager.page(pager.totalPages))
