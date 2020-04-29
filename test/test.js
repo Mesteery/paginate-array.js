@@ -84,11 +84,11 @@ describe('Paginate', function () {
 				assert.equal(obj.hasPrev(), true)
 			})
 			
-			it('should return `false` if it has _no_ previou pages', function () {
-				obj.page(1)
-				assert.equal(obj.hasPrev(), false)
-				obj.next()
+			it('should return `false` if it has _no_ next pages', function () {
+				obj.page(3)
+				assert.equal(obj.hasNext(), false)
 				obj.prev()
+				obj.next()
 				assert.equal(obj.hasNext(), false)
 			})
 			
