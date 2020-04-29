@@ -1,4 +1,4 @@
-# Paginate.js ![Testing](https://github.com/mestery69/paginate.js/workflows/Testing/badge.svg)
+# Paginate.js ![Testing](https://github.com/mestery69/paginate.js/workflows/Testing/badge.svg =10x)
 
 **A simple JavaScript utility to paginate arrays.**
   
