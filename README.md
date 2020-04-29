@@ -25,10 +25,7 @@ optionally with a specific `Number` of items per page : `new Paginate(array, /* 
 const Paginate = require("paginate-array.js")
 
 // create some fake data
-let fakeData = []
-for (let i = 1; i <= 38; i++) {
-  fakeData.push("Fake Data n° "+i)
-}
+let fakeData = Array.from(new Array(35).keys())
 
 // create a Paginate object with 10 items per page (it's the default value)
 let pager = new Paginate(fakeData)
@@ -47,10 +44,7 @@ console.log(pager.prev())
 const Paginate = require("paginate-array.js")
 
 // create some fake data
-let fakeData = []
-for (let i = 1; i <= 14; i++) {
-  fakeData.push("Fake Data n° "+i)
-}
+let fakeData = Array.from(new Array(14).keys())
 
 // create a Paginate object with 5 items per page
 let pager = new Paginate(fakeData, 5)

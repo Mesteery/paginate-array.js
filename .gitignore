@@ -1,0 +1,6 @@
+typings/index.js
+example.js
+.github/
+test/
+node_modules/
+package-lock.json

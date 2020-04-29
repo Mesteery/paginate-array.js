@@ -1,10 +1,7 @@
 const Paginate = require("paginate-array.js")
 
 // create some fake data
-let fakeData = []
-for (let i = 1; i <= 42; i++) {
-  fakeData.push("Fake Data n° "+i)
-}
+let fakeData = Array.from(new Array(42).keys())
 
 // create a new Paginate object
 let pager = new Paginate(fakeData, 11)

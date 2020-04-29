@@ -1,25 +1,40 @@
 {
   "name": "paginate-array.js",
+  "author": "mestery69",
   "version": "0.6.7",
+  "license": "MIT",
+  "types": "./typings/index.d.ts",
   "description": "A simple JavaScript utility to paginate arrays.",
-  "repository": "mestery69/paginate.js",
-  "main": "./paginate.js",
+  "homepage": "https://github.com/mestery69/paginate-array.js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mestery69/paginate-array.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mestery69/paginate-array.js/issues"
+  },
+  "main": "./src/paginate.js",
   "directories": {
-    "test": "test"
+    "test": "test",
+    "src": "src",
+    "typings": "typings"
   },
   "scripts": {
-    "test": "mocha -R 'spec'"
+    "test": "npm run test:code && npm run test:typings",
+    "test:code": "mocha -R 'spec'",
+    "test:typings": "tsc"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "typescript": "*",
+    "@types/node": "*"
   },
   "runkitExampleFilename": "./example.js",
-  "repository": "",
-  "author": "Mestery",
-  "license": "MIT",
   "keywords": [
     "array",
     "arrays",
+    "page",
+    "pages",
     "pager",
     "paginate",
     "pagination",
@@ -27,6 +42,7 @@
     "simple",
     "array-pagination",
     "paginate-array",
+    "paginate-array.js",
     "paginate.js"
   ]
 }
