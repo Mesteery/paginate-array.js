@@ -1,7 +1,6 @@
-# Paginate.js
+# Paginate.js ![Testing](https://github.com/mestery69/paginate.js/workflows/Testing/badge.svg)
 
-**A simple JavaScript utility to paginate arrays.**  
-![Testing](https://github.com/mestery69/paginate.js/workflows/Testing/badge.svg)
+**A simple JavaScript utility to paginate arrays.**
   
 ## Usage
   
