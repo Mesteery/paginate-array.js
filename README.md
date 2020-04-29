@@ -1,4 +1,4 @@
-# Paginate.js <img alt="Testing" src="https://github.com/mestery69/paginate.js/workflows/Testing/badge.svg" width="100"/>
+# Paginate.js <img alt="Testing" src="https://github.com/mestery69/paginate.js/workflows/Testing/badge.svg" width="70" />
 
 **A simple JavaScript utility to paginate arrays.**
   
