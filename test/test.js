@@ -4,7 +4,7 @@ describe('Paginate', function () {
 	
 	var data = Array.from(new Array(25).keys())
 	
-	var Paginate = require('../Paginate')
+	var Paginate = require('../src/index')
 		
   describe('Constructor', function () {
 		

@@ -1,5 +1,5 @@
 declare module 'paginate-array.js' {
-  export class Paginate<T> {
+  export default class Paginate<T> {
     constructor (data: T[], perPage: number);
     public data: T[];
     public perPage: number;

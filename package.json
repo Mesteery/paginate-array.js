@@ -13,7 +13,7 @@
   "bugs": {
     "url": "https://github.com/mestery69/paginate-array.js/issues"
   },
-  "main": "./src/paginate.js",
+  "main": "./src/index.js",
   "directories": {
     "test": "test",
     "src": "src",
