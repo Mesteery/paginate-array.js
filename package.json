@@ -4,6 +4,9 @@
   "version": "0.7.1",
   "license": "MIT",
   "types": "./typings/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "description": "A simple JavaScript utility to paginate arrays.",
   "homepage": "https://github.com/mestery69/paginate-array.js#readme",
   "repository": {
