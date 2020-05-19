@@ -48,7 +48,7 @@
     "paginate-array",
     "paginate-array.js",
     "paginate-array.ts",
-    "paginate-ts",
+    "paginate.ts",
     "paginate.js"
   ]
 }
