@@ -1,6 +1,6 @@
 /// <reference path="index.d.ts" />
 
-import Paginate from 'paginate-array.js'
+import Paginate from '../src/index.js'
 
 const fakeData: number[] = Array.from(new Array(260).keys());
 const pager = new Paginate(fakeData, 20)
