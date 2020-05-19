@@ -41,11 +41,14 @@
     "pager",
     "paginate",
     "pagination",
+    "typescript"
     "javascript",
     "simple",
     "array-pagination",
     "paginate-array",
     "paginate-array.js",
+    "paginate-array.ts",
+    "paginate-ts",
     "paginate.js"
   ]
 }
