@@ -1,3 +1,5 @@
+**DEPRECATED :** use https://github.com/Mesteery/apaginator instead.
+
 ## Paginate.js <img alt="Testing" src="https://github.com/mestery69/paginate.js/workflows/Testing/badge.svg" width="100rem" />
 
 **A simple JavaScript utility to paginate arrays.**
